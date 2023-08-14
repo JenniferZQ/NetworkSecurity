@@ -61,8 +61,23 @@ console.log(b–);  // 9
 </html>
 
 内嵌式：
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function loadImage(){
+            alert("图片加载完成");
+        }
+    </script> 
+    <img src="https://static001.geekbang.org/static/university/img/university-logo.3d6b4cc3.svg" 
+    width="500" onload=loadImage() />
+</body>
+</html>
 
 引入外部文件：
 
