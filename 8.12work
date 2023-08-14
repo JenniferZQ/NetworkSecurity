@@ -40,11 +40,10 @@ console.log(“a + b”);
 三、计算下述代码的打印值
 var a = 10;
 var b = 10;
-console.log(a++);
-console.log(++a);
-console.log(–b);
-console.log(b–);
-
+console.log(a++);  // 10
+console.log(++a);  // 12
+console.log(–b);  // 9
+console.log(b–);  // 9
 
 四、分别使用行内式、内嵌式、引入外部文件的方法造成网页弹窗，要求触发弹窗的 JavaScript 命令不止一种（alert、print、prompt）。
 
