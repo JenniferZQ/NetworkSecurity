@@ -103,10 +103,37 @@ loadImage();
 五、安装 Docker 并练习以下基础命令、帮助命令、镜像命令和容器命令:
 帮助命令
 docker 命令 --help
-
+[root@localhost docker]# docker image --help
+Usage:  docker image COMMAND
+Manage images
+Commands:
+  build       Build an image from a Dockerfile
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Display detailed information on one or more images
+  load        Load an image from a tar archive or STDIN
+  ls          List images
+  prune       Remove unused images
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  rm          Remove one or more images
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+Run 'docker image COMMAND --help' for more information on a command.
 
 镜像命令
 docker images 列出所有镜像
+[root@localhost docker]# docker image ls
+REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
+hello-world   latest    9c7a54a9a43c   3 months ago    13.3kB
+centos        latest    5d0da3dc9764   23 months ago   231MB
+
 docker search 搜索镜像
+[root@localhost docker]# docker search centos --filter=STARS=5000
+NAME      DESCRIPTION                                 STARS     OFFICIAL   AUTOMATED
+centos    DEPRECATED; The official build of CentOS.   7627      [OK]
+
 docker pull 下载镜像
+
+
 docker rmi 删除镜像
