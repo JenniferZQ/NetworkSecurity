@@ -80,8 +80,25 @@ console.log(b–);  // 9
 </html>
 
 引入外部文件：
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://static001.geekbang.org/static/university/img/university-logo.3d6b4cc3.svg" 
+    width="500"/>
+    <script src="8.12work.js"></Script>
+</body>
+</html>
 
-
+// 8.12work.js
+function loadImage(){
+    alert("图片加载完成");
+};
+loadImage();
 
 五、安装 Docker 并练习以下基础命令、帮助命令、镜像命令和容器命令:
 帮助命令
