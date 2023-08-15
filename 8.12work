@@ -134,6 +134,21 @@ NAME      DESCRIPTION                                 STARS     OFFICIAL   AUTOM
 centos    DEPRECATED; The official build of CentOS.   7627      [OK]
 
 docker pull 下载镜像
-
+[root@localhost docker]# docker pull mysql
+Using default tag: latest
+latest: Pulling from library/mysql
+b193354265ba: Pull complete 
+14a15c0bb358: Pull complete 
+02da291ad1e4: Pull complete 
+9a89a1d664ee: Pull complete 
+a24ae6513051: Pull complete 
+b85424247193: Pull complete 
+9a240a3b3d51: Pull complete 
+8bf57120f71f: Pull complete 
+c64090e82a0b: Pull complete 
+af7c7515d542: Pull complete 
+Digest: sha256:c0455ac041844b5e65cd08571387fa5b50ab2a6179557fd938298cab13acf0dd
+Status: Downloaded newer image for mysql:latest
+docker.io/library/mysql:latest
 
 docker rmi 删除镜像
