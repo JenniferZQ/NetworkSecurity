@@ -2,15 +2,33 @@
 后台方式运行：
 [root@localhost ~]# docker run -d centos
 1182a1fa66205d374f01d8453590ba48bb2130171de189f1e2e0c12371f3c530
-[root@localhost ~]# docker ps
-CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 [root@localhost ~]# docker ps -a
 CONTAINER ID   IMAGE     COMMAND       CREATED          STATUS                      PORTS     NAMES
 1182a1fa6620   centos    "/bin/bash"   18 seconds ago   Exited (0) 17 seconds ago             sleepy_allen
 
 交互方式运行：
 [root@localhost ~]# docker run -it centos
-[root@87c8644b7098 /]# exit
+[root@localhost ~]# docker run -it centos
+[root@5105460c002f /]# [root@localhost ~]# exit
 exit
+[root@localhost ~]# docker ps -a
+CONTAINER ID   IMAGE     COMMAND       CREATED              STATUS              PORTS     NAMES
+5105460c002f   centos    "/bin/bash"   About a minute ago   Up About a minute             beautiful_moore
+8a93483c3073   centos    "/bin/bash"   3 minutes ago        Up 3 minutes                  focused_mccarthy
+
 
 2、在 docker 并部署 DVWA，要求：DVWA web 端口映射到 8081，提供访问截图。
+部署DVWA：
+[root@localhost ~]# docker pull sagikazarmark/dvwa
+Using default tag: latest
+latest: Pulling from sagikazarmark/dvwa
+693502eb7dfb: Pull complete 
+e6c91bb380b4: Pull complete 
+e111b9773d58: Pull complete 
+55f12e04cfae: Pull complete 
+8f1b50e10184: Pull complete 
+Digest: sha256:1224167ccb59ad64751d52d7beb75fd445a252ae3c13640cfd35c927a2a6725b
+Status: Downloaded newer image for sagikazarmark/dvwa:latest
+docker.io/sagikazarmark/dvwa:latest
+[root@localhost ~]# docker run -d --name dvwa2 -p 8081:80 -p 33060:3306 sagikazarmark/dvwa
+aaebe587a7a0c5f218bd85066c6c5bb235bbc1a93cc89b93499771daa8a878ce
