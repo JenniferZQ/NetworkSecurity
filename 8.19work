@@ -1,1 +1,15 @@
+1、在 docker 中分别以后台方式和交互方式启动 centos，对比启动后的容器状态，实现退出容器也能保持其运行状态。
+后台方式运行：
+[root@localhost ~]# docker run -d centos
+1182a1fa66205d374f01d8453590ba48bb2130171de189f1e2e0c12371f3c530
+[root@localhost ~]# docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[root@localhost ~]# docker ps -a
+CONTAINER ID   IMAGE     COMMAND       CREATED          STATUS                      PORTS     NAMES
+1182a1fa6620   centos    "/bin/bash"   18 seconds ago   Exited (0) 17 seconds ago             sleepy_allen
+
+交互方式运行：
+[root@localhost ~]# docker run -it centos
+[root@87c8644b7098 /]# exit
+exit
 
