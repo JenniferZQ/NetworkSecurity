@@ -33,3 +33,5 @@ aaebe587a7a0c5f218bd85066c6c5bb235bbc1a93cc89b93499771daa8a878ce
 CONTAINER ID   IMAGE                COMMAND     CREATED       STATUS                     PORTS                                                                                NAMES
 aaebe587a7a0   sagikazarmark/dvwa   "/run.sh"   2 hours ago   Up 2 hours                 0.0.0.0:8081->80/tcp, :::8081->80/tcp, 0.0.0.0:33060->3306/tcp, :::33060->3306/tcp   dvwa2
 
+
+
